@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 5</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px; 
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+         td[scope="col"]{
+            font-weight: bolder;
+            text-align: center;
+        }
+        col.nome{
+            background-color: rgb(116, 116, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">Idade</td>
+            <td scope="col">Sexo</td>
+            <td scope="col">Profissão</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Engenheira</td> 
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Maria Souza</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Pedro Santos</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Advogado</td>
+        </tr>
+    </table>
+</body>
+</html>
